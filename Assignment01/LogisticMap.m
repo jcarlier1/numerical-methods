@@ -1,6 +1,6 @@
 function x_values = LogisticMap(l,x)
 largen = 10000;
-n = 1; % Number of limiting values of the sequence
+n = 10; % Number of limiting values of the sequence
 x_values = zeros(1, n); % Preallocate array for efficiency
 
 for i = 1:largen

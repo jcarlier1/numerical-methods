@@ -28,11 +28,16 @@ function Logistic(lmin,lmax)
     l = linspace(lmin, lmax, nl);
 
     % Calculate the logistic map values for each l
-    y = arrayfun(@(l_val) LogisticMap(l_val, x), l);
+    y = arrayfun(@(l_val) LogisticMap(l_val, x), l, 'UniformOutput', false);
+    y = cell2mat(y); % Convert cell array to matrix
 
     % Plot the results
     figure; % Create a new figure
-    plot(l, y, 'LineWidth', 2); % Plot l vs LogisticMap(l,x)
+    hold on; % Hold on to plot multiple lines
+    for i = 1:size(y, 2)
+        plot(l, y(:, i), 'LineWidth', 2); % Plot l vs LogisticMap(l,x) for each column
+    end
+    hold off; % Release the hold
     xlabel('l'); % Label for x-axis
     ylabel('LogisticMap(l,x)'); % Label for y-axis
     title('Logistic Map Values'); % Title of the plot
