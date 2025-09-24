@@ -41,3 +41,5 @@ codegen/
 
 # Project specific resources
 resources/
+
+*.zip

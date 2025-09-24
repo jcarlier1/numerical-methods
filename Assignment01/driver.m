@@ -5,7 +5,7 @@ qnumber = 1;
 %% Question 1
 disp(['Question number: ', num2str(qnumber)]);
 qnumber = qnumber + 1;
-disp("See file SineTaylor.m")
+disp("See SineTaylor.m")
 
 
 %% Question 2
@@ -110,7 +110,7 @@ title('Sine Function and Taylor Series Approximations');
 %% Question 6
 disp(['Question number: ', num2str(qnumber)]);
 qnumber = qnumber + 1;
-disp("See file Logistic.m")
+disp("See Logistic.m")
 
 %% Question 7
 disp(['Question number: ', num2str(qnumber)]);
