@@ -1,4 +1,10 @@
 function y = SineTaylor(x, n)
+%{
+This function computes the sine of the input values x using the Taylor 
+series expansion. The parameter n specifies the number of terms to include 
+in the series approximation.
+%}
+
 % Initial value of the Taylor Series for Sine.
 y = zeros(size(x)); % Initialize y to be the same size as x
 % Initialize the series degree
